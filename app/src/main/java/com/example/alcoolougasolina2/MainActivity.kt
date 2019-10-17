@@ -35,10 +35,16 @@ class MainActivity : AppCompatActivity() {
 
         if (resultadoPrecoAlcool < resultadoPrecoGasolina) {
             text_resultado.setText("Melhor Utilizar Álcool!")
-        } else {
+        }
+        else {
             text_resultado.setText("Melhor Utilizar Gasolina!")
         }
-
+        if (resultadoPrecoAlcool == resultadoPrecoGasolina ){
+            text_resultado.setText("Ultilize o Combustível de sua preferencia!")
+        }
+        else{
+            text_resultado.setText("Error!")
+        }
     }
 
 }
